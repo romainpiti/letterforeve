@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #cfeeff;
+
+    font-family: Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    position: relative;
+}
+
+.envelope {
+    position: relative;
+
+    width: 520px;
+    height: 340px;
+
+    background: #ffffff;
+
+    border: 2px solid #d8d8d8;
+
+    overflow: visible;
+}
+
+.flap {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 110px;
+
+    background: #f0f0f0;
+
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+    transform-origin: top;
+    transition: transform 1s;
+
+    z-index: 30;
+}
+
+
+.letter {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 500px;
+    height: 780px;
+
+    transform: translateX(-50%) translateY(300px);
+
+    opacity: 0;
+
+    transition: all 1.5s ease;
+
+    z-index: 20;
+}
+
+.panel {
+    background: #fffdf8;
+
+    border: 1px solid #ece6dd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.top-panel {
+    height: 120px;
+
+    transform-origin: bottom;
+
+    transform: rotateX(-90deg);
+
+    transition: transform 1s ease 1.5s;
+}
+
+.middle-panel {
+    height: 350px;
+
+    font-size: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.bottom-panel {
+    height: 180px;
+
+    transform-origin: top;
+
+    transform: rotateX(90deg);
+
+    transition: transform 1s ease 1.5s;
+}
+
+.bottom-panel img {
+    width: 420px;
+    max-height: 160px;
+
+
+    object-fit: cover;
+    height: auto;
+
+    border-radius: 15px;
+
+    display: block;
+}
+
+.seal {
+    position: absolute;
+
+    left: 50%;
+    top: 18%;
+
+    transform: translateX(-50%);
+
+    width: 95px;
+    height: 95px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition: all 0.5s ease;
+}
+
+.open .seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.open .flap {
+    transform: rotateX(180deg);
+    transition: transform 1s ease;
+}
+
+.open .letter {
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.15);
+
+    z-index: 1000;
+}
+
+.open .paper {
+    transform: scaleY(1);
+}
+
+.open .top-panel {
+    transform: rotateX(0deg);
+}
+
+.open .bottom-panel {
+    transform: rotateX(0deg);
+}
+
+.top-panel {
+    background: #fffdf8;
+}
+
+.middle-panel {
+    background: #fffdf8;
+}
+
+.bottom-panel {
+    background: #fffdf8;
+}
+
+.seal img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+.seal:hover img {
+    transform: scale(1.1);
+}
+
+/* Ouverture du rabat */
+.open .flap {
+    transform: rotateX(180deg);
+}
+
+/* La fleur disparaît */
+.open .seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+}
+
+/* Dépliage du haut */
+.open .top-panel {
+    transform: rotateX(0deg);
+
+    transition:
+        transform 1s ease 1.2s;
+}
+
+.open .bottom-panel {
+    transform: rotateX(0deg);
+
+    transition:
+        transform 1s ease 2.2s;
+}
+
+.top-panel h2 {
+    font-size: 52px;
+    margin: 0;
+}
+
+.deco {
+    position: fixed;
+
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+
+    opacity: .85;
+
+    z-index: 1;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.deco1 {
+    top: 60px;
+    left: 120px;
+
+    transform: rotate(-10deg);
+}
+
+.deco2 {
+    top: 120px;
+    right: 120px;
+
+    transform: rotate(12deg);
+}
+
+.deco3 {
+    bottom: 120px;
+    left: 150px;
+
+    transform: rotate(8deg);
+}
+
+.deco4 {
+    bottom: 80px;
+    right: 140px;
+
+    transform: rotate(-12deg);
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
