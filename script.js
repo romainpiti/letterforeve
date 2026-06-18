@@ -121,7 +121,7 @@ const drawings = [
 {
     title: "For You",
     date: "18 June 2026",
-    image: "doggierose.png"
+    image: "doggierose.jpg"
 }
 
 ];
