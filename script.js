@@ -47,9 +47,30 @@ Her name is Eve.`
 },
 
 {
-    title: "Test",
+    title: "You",
 
-    text: `Coming soon...`
+    text: `I know you don't see it,
+    I know you won't believe me,
+    But I've talked to the sunrise this morning
+    And he told me he was jealous of your smile
+    The way it can illuminates even the places that haven't seen the light for a long time
+    
+    I know you don't see it,
+    I know you won't believe me,
+    But I've heard birds murmurs
+    who feel themselves becoming uncertain since they heard your voice ring in their ears
+    
+    I know you don't see it,
+    I know you won't believe me,
+    But the see is strangely calm since she heard you moving
+    If the moon controls the tides, 
+    I'm sure that you control the moon
+    
+    I know you don't see it,
+    I know you won't believe me
+    But if I could share you my eyes and ears,
+    If you could hear the rumors I hear,
+    You could hear the whole world holding its breath at the mere possibility of your existence`
 }
 ];
 
