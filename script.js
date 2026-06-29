@@ -143,7 +143,12 @@ const drawings = [
     title: "For You",
     date: "18 June 2026",
     image: "doggierose.jpg"
-}
+},
+
+{
+    title: "New flower",
+    date: "26 June 2026",
+    image: "doggieflower.jpg"
 
 ];
 
