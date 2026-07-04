@@ -149,6 +149,7 @@ const drawings = [
     title: "New flower",
     date: "26 June 2026",
     image: "doggieflower.jpg"
+}
 
 ];
 
