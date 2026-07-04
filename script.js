@@ -62,7 +62,7 @@ Her name is Eve.`
     
     I know you don't see it,
     I know you won't believe me,
-    But the see is strangely calm since she heard you moving
+    But the sea is strangely calm since she heard you moving
     If the moon controls the tides, 
     I'm sure that you control the moon
     
