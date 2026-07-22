@@ -13,7 +13,6 @@ if (closeBtn) {
         envelope.classList.remove("open");
     });
 }
-});
 
 
 /* ---------- NOTEBOOK ---------- */
