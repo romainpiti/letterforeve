@@ -8,8 +8,11 @@ seal.addEventListener("click", () => {
 const closeBtn = document.getElementById("closeLetter");
 console.log(closeBtn);
 
-closeBtn.addEventListener("click", () => {
-    envelope.classList.remove("open");
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+        envelope.classList.remove("open");
+    });
+}
 });
 
 
