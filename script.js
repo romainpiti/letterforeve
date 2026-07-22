@@ -49,7 +49,7 @@ Her name is Eve.`
 {
     title: "You",
 
-    text: `I know you don't see it,
+    text: 'I know you don't see it,
     I know you won't believe me,
     But I've talked to the sunrise this morning
     And he told me he was jealous of your smile
@@ -70,7 +70,7 @@ Her name is Eve.`
     I know you won't believe me
     But if I could share you my eyes and ears,
     If you could hear the rumors I hear,
-    You could hear the whole world holding its breath at the mere possibility of your 
+    You could hear the whole world holding its breath at the mere possibility of your existence'
 }
 
 ];
