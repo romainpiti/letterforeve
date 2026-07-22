@@ -71,7 +71,21 @@ Her name is Eve.`
     But if I could share you my eyes and ears,
     If you could hear the rumors I hear,
     You could hear the whole world holding its breath at the mere possibility of your existence`
+},
+
+{
+    title: "Words in my head",
+    
+    text: 'The sparkle in your eyes shines more than the moon
+    Your stare guide people in the universe 
+    The sound of your voice make the birds sing 
+    Your words soothes the strongest storms 
+    Whenever you’re around the flowers start to bloom 
+    And during the night the stars always dance 
+    To celebrate your presence on this planet 
+    And to thank you for inspiring the world'
 }
+
 ];
 
 const poemList =
